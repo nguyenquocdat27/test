@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>YOLOv8 AI Test</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 30px;
+        }
+        img {
+            max-width: 90%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>🚀 Test AI YOLOv8</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <br><br>
+        <button type="submit">Detect</button>
+    </form>
+
+    {% if result_image %}
+        <h3>Kết quả:</h3>
+        <img src="{{ result_image }}">
+    {% endif %}
+</div>
+
+</body>
+</html>

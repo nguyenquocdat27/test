@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['la chay', 'la dom', 'la heo', 'la xanh']
+
+roboflow:
+  workspace: quocdat-qs3f3
+  project: helo-n7w3z
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/quocdat-qs3f3/helo-n7w3z/dataset/2
